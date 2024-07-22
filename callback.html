@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <p>Autorisation réussie ! Vous pouvez maintenant retourner à l'application.</p>
+    <script type="text/javascript">
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        console.log("Code d'autorisation:", code);
+        // Vous pouvez maintenant envoyer ce code à votre serveur backend pour échanger contre un jeton d'accès
+    </script>
+</body>
+</html>
