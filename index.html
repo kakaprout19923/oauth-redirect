@@ -6,7 +6,7 @@
     <title>Redirection vers Discord</title>
     <script type="text/javascript">
         window.onload = function() {
-            const clientId = '1264849368532647948';
+            const clientId = '1264875559872106496';
             const redirectUri = encodeURIComponent('https://kakaprout19923.github.io/oauth-redirect/callback.html');
             const discordAuthUrl = `https://discord.com/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=identify%20email`;
             window.location.href = discordAuthUrl;
